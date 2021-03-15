@@ -108,7 +108,9 @@ a {
 }
 header {
     .header-banner {
-        width: 100%;
+        .banner__item{
+            width: 100%;
+        }
         overflow: hidden;
         img {
             width: 100%;
@@ -163,7 +165,7 @@ main {
         margin: 30px 0;
     }
     & .main-layout {
-        padding: 15px;
+        padding: 15px 25px;
     }
     .main-search {
         .search-bar {
@@ -237,7 +239,14 @@ main {
             }
         }
     }
-    
+    section > h3.section-title{
+        text-transform: uppercase;
+        color: $color-primary;
+        display: inline-block;
+        border-bottom: 5px dashed $color-primary;
+        padding:10px 0;
+        margin-bottom: 30px;
+    }
     #categories-sec{
         #categories-list{
             list-style-type: none;
@@ -325,7 +334,7 @@ main {
             }
         }
     }
-    #promotion-sec{
+    .promotion-sec{
         .promotion__left{
            > div {
                margin-bottom: 35px;
@@ -336,10 +345,12 @@ main {
             min-width: 100%;
             height: auto;
         }
+        .col-lg-6 img{
+            width: 100%;
+        }
     }
     #tab--sec{
         & .tab__controller{
-
             ul{
                 list-style-type: none;
                 display: flex;
@@ -351,7 +362,7 @@ main {
                         font-size: 18px;
                         color: $color-muted;
                         display: inline-block;
-                        padding:20px 30px;
+                        padding:10px 30px;
                         cursor: pointer;
                     }
                     &::before{
@@ -403,6 +414,7 @@ main {
                     }
                 }
                 .tab__slides{
+                    padding:0;
                     .slide__container{
                         .silde__item{
                             margin: 0 10px;

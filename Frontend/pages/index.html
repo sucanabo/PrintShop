@@ -137,7 +137,7 @@
 						</div>
 					</div>
 				</section>
-				<section id="promotion-sec">
+				<section class="promotion-sec">
 					<div class="row">
 						<div class="promotion__left col-lg-9 col-md-12 col-sm-12">
 							<div class="img-box img-box--cover cover-plus">
@@ -172,29 +172,30 @@
 					</div>
 				</section>
 				<section id="tab--sec">
+					<h3 class="section-title">Sản phẩm của chúng tôi</h3>
 					<div class="tab__controller">
 						<ul>
 							<li>
 								<a href="#" id="tablink-1" class="tablink">
-									Danh thiếp
+									Best Sellers
 								</a>
 								
 							</li>
 							<li>
 								<a href="#" id="tablink-2" class="tablink">
-									Decal
+									Hot sale
 								</a>
 								
 							</li>
 							<li>
 								<a href="#" id="tablink-3" class="tablink">
-									Lịch
+									Sản phẩm mới
 								</a>
 								
 							</li>
 							<li>
 								<a href="#" id="tablink-4" class="tablink">
-									Poster
+									Nổi bật
 								</a>
 								
 							</li>
@@ -511,6 +512,68 @@
 						</div>
 					</div>
 				</section>
+				<section class="promotion-sec">
+
+					<div class="img-box"><img src="http://solution.cmsmart.net/wp_printshop/printshop_header_boxed/wp-content/uploads/2016/07/boxed09-bn-10.jpg" alt=""></div>
+
+				</section>
+				<section id = "post-sec">
+					<h3 class="section-title">Tin tức</h3>
+					<div class="row">
+						<div class="col-lg-3">
+							<div class="post-sec__item">
+								<div class="img-box img-box--post">
+									<a href="#">
+										<img src="http://solution.cmsmart.net/wp_printshop/printshop_header_boxed/wp-content/uploads/2016/04/Fits-Every-Interior-post-362x248.jpg" alt="">
+									</a>
+								</div>
+								<div class="pos-sec__info">
+									<h4>Title post 1</h4>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere maiores sapiente voluptates, aliquam deleniti maxime esse, quisquam architecto voluptatum perferendis eveniet amet laborum temporibus debitis pariatur ullam officia, provident repellendus.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3">
+							<div class="post-sec__item">
+								<div class="img-box img-box--post">
+									<a href="#">
+										<img src="http://solution.cmsmart.net/wp_printshop/printshop_header_boxed/wp-content/uploads/2016/04/Fits-Every-Interior-post-362x248.jpg" alt="">
+									</a>
+								</div>
+								<div class="pos-sec__info">
+									<h4>Title post 1</h4>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere maiores sapiente voluptates, aliquam deleniti maxime esse, quisquam architecto voluptatum perferendis eveniet amet laborum temporibus debitis pariatur ullam officia, provident repellendus.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3">
+							<div class="post-sec__item">
+								<div class="img-box img-box--post">
+									<a href="#">
+										<img src="http://solution.cmsmart.net/wp_printshop/printshop_header_boxed/wp-content/uploads/2016/04/Fits-Every-Interior-post-362x248.jpg" alt="">
+									</a>
+								</div>
+								<div class="pos-sec__info">
+									<h4>Title post 1</h4>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere maiores sapiente voluptates, aliquam deleniti maxime esse, quisquam architecto voluptatum perferendis eveniet amet laborum temporibus debitis pariatur ullam officia, provident repellendus.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3">
+							<div class="post-sec__item">
+								<div class="img-box img-box--post">
+									<a href="#">
+										<img src="http://solution.cmsmart.net/wp_printshop/printshop_header_boxed/wp-content/uploads/2016/04/Fits-Every-Interior-post-362x248.jpg" alt="">
+									</a>
+								</div>
+								<div class="pos-sec__info">
+									<h4>Title post 1</h4>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere maiores sapiente voluptates, aliquam deleniti maxime esse, quisquam architecto voluptatum perferendis eveniet amet laborum temporibus debitis pariatur ullam officia, provident repellendus.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
 			</div>
 		</main>
 
@@ -527,26 +590,19 @@
 		$(document).ready(function () {
 			//slide
 			$(".owl-carousel.header-banner").owlCarousel({
-				autoWidth:true,
+				autoHeight:true,
+				items:1,
+				dots:false,
 				loop:true, 
 				autoplay:true,
     			autoplayTimeout:5000,
-				margin:10,
-				nav:true,
-				dots:true,
 			});
 			$(".owl-carousel.slide__container").owlCarousel({
-				autoWidth:true,
-				items:2,
+				items:3,
+				autoHeight:true,
 				loop:true, 
 				autoplay:true,
     			autoplayTimeout:5000,
-				margin:20,
-				responsive:{
-					600:{
-						items:4
-					}
-				}
 			});
 			//tab
 			$('.tablink').click(function(evt){
