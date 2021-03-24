@@ -43,7 +43,7 @@
 				</li>
 			</ul>
 		</div>
-		<header>
+		<header id="main-header">
 			<div class="owl-carousel header-banner">
 				<div class="banner__item">
 					<img src="./dist/img/banner/01.jpg" alt="banner01">
@@ -79,22 +79,15 @@
 		<main>
 			<div class="main-layout">
 				<section class="main-search d-flex">
-					<div class="dropdown">
-						<button class="btn m_bg-dark dropdown-toggle" type="button" id="dropdownMenuButton"
-							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Tất cả danh mục
-						</button>
-						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-							<a class="dropdown-item" href="#">Action</a>
-							<a class="dropdown-item" href="#">Another action</a>
-							<a class="dropdown-item" href="#">Something else here</a>
-						</div>
-					</div>
 					<div class="search-bar">
-						<form class="form-inline">
-							<input class="form-control mr-sm-2 ml-2" type="search" placeholder="Bạn cần tìm gì?"
+						<form method="get">
+							<div class="form-group">
+								<div class="row">
+									<input class="form-control mr-sm-2 ml-2" type="search" placeholder="Bạn cần tìm gì?"
 								aria-label="Search">
 							<button class="btn m_btn-outline-dark my-2 my-sm-0" type="submit">Tìm kiếm</button>
+								</div>
+							</div>
 						</form>
 
 					</div>
@@ -127,7 +120,7 @@
 									<li><a href="#"><span><i class="fas fa-stream"></i></span>In menu</a></li>
 								</ul>
 							</div>
-							<div class="col-md-7 col-sm-12">
+							<div class="col-md-7 col-sm-12 col-sm-hidden">
 								<div class="categories-img">
 									<div class="wrapper">
 										<h1 class="text-white">ORDER NOW</h1>
@@ -145,18 +138,18 @@
 							</div>
 							<div>
 								<div class="row">
-									<div class="col-lg-4 col-md-4 col-sm-12 ">
+									<div class="col-lg-4 col-md-4 col-sm-4 ">
 										<div class="img-box img-box--cover cover-plus">
 											<img src="http://solution.cmsmart.net/wp_printshop/printshop_header_boxed/wp-content/uploads/2016/07/boxed09-bn-2.jpg" alt="">
 										</div>
 									</div>
-									<div class="col-lg-4 col-md-4 col-sm-12 ">
+									<div class="col-lg-4 col-md-4 col-sm-4 ">
 										<div class="img-box img-box--cover cover-plus">
 											<img src="http://solution.cmsmart.net/wp_printshop/printshop_header_boxed/wp-content/uploads/2016/07/boxed09-bn-3.jpg" alt="">
 										</div>
 										
 									</div>
-									<div class="col-lg-4 col-md-4 col-sm-12 ">
+									<div class="col-lg-4 col-md-4 col-sm-4 ">
 										<div class="img-box img-box--cover cover-plus">
 											<img src="http://solution.cmsmart.net/wp_printshop/printshop_header_boxed/wp-content/uploads/2016/07/boxed09-bn-4.jpg" alt="">
 										</div>
@@ -164,7 +157,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="promotion__right col-lg-3 col-md-12 col-sm-12">
+						<div class="promotion__right col-lg-3 col-md-hidden">
 							<div class="img-box img-box--cover cover-plus">
 								<img src="http://solution.cmsmart.net/wp_printshop/printshop_header_boxed/wp-content/uploads/2016/07/boxed09-bn-5.jpg" alt="">
 							</div>
@@ -205,7 +198,7 @@
 						<div id="tab-cate__1" class="tab-cate">
 							<div class="container-fluid">
 								<div class="row">
-									<div class="tab__detail col-lg-3">
+									<div class="tab__detail col-lg-3 pr-3">
 										<ul>
 											<li>
 												<a href="#">detail product 1</a>
@@ -227,7 +220,7 @@
 											</li>
 										</ul>
 									</div>
-									<div class="tab__slides col-lg-9 col-md-12">
+									<div class="tab__slides col-lg-9 col-md-12 pl-3 p-md-0 pt-sm-3">
 										<div id="tab-slide--1" class="owl-carousel slide__container">
 											<div class="silde-1__item silde__item">
 												<div class="img-box img-box--cover cover--seenow">
@@ -519,8 +512,8 @@
 				</section>
 				<section id = "post-sec">
 					<h3 class="section-title">Tin tức</h3>
-					<div class="row">
-						<div class="col-lg-3">
+					<div class="row owl-carousel post__container">
+						<div class="post__item">
 							<div class="post-sec__item">
 								<div class="img-box img-box--post">
 									<a href="#">
@@ -528,12 +521,15 @@
 									</a>
 								</div>
 								<div class="pos-sec__info">
-									<h4>Title post 1</h4>
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere maiores sapiente voluptates, aliquam deleniti maxime esse, quisquam architecto voluptatum perferendis eveniet amet laborum temporibus debitis pariatur ullam officia, provident repellendus.</p>
+									<a href="#">
+										<h4>Title post 1</h4>
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere maiores sapiente voluptates, aliquam deleniti maxime esse, quisquam architecto voluptatum perferendis eveniet amet laborum temporibus debitis pariatur ullam officia, provident repellendus.</p>
+									</a>
+									
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-3">
+						<div class="post__item">
 							<div class="post-sec__item">
 								<div class="img-box img-box--post">
 									<a href="#">
@@ -541,12 +537,15 @@
 									</a>
 								</div>
 								<div class="pos-sec__info">
-									<h4>Title post 1</h4>
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere maiores sapiente voluptates, aliquam deleniti maxime esse, quisquam architecto voluptatum perferendis eveniet amet laborum temporibus debitis pariatur ullam officia, provident repellendus.</p>
+									<a href="#">
+										<h4>Title post 1</h4>
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere maiores sapiente voluptates, aliquam deleniti maxime esse, quisquam architecto voluptatum perferendis eveniet amet laborum temporibus debitis pariatur ullam officia, provident repellendus.</p>
+									</a>
+									
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-3">
+						<div class="post__item">
 							<div class="post-sec__item">
 								<div class="img-box img-box--post">
 									<a href="#">
@@ -554,12 +553,15 @@
 									</a>
 								</div>
 								<div class="pos-sec__info">
-									<h4>Title post 1</h4>
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere maiores sapiente voluptates, aliquam deleniti maxime esse, quisquam architecto voluptatum perferendis eveniet amet laborum temporibus debitis pariatur ullam officia, provident repellendus.</p>
+									<a href="#">
+										<h4>Title post 1</h4>
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere maiores sapiente voluptates, aliquam deleniti maxime esse, quisquam architecto voluptatum perferendis eveniet amet laborum temporibus debitis pariatur ullam officia, provident repellendus.</p>
+									</a>
+									
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-3">
+						<div class="post__item">
 							<div class="post-sec__item">
 								<div class="img-box img-box--post">
 									<a href="#">
@@ -567,8 +569,75 @@
 									</a>
 								</div>
 								<div class="pos-sec__info">
-									<h4>Title post 1</h4>
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere maiores sapiente voluptates, aliquam deleniti maxime esse, quisquam architecto voluptatum perferendis eveniet amet laborum temporibus debitis pariatur ullam officia, provident repellendus.</p>
+									<a href="#">
+										<h4>Title post 1</h4>
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere maiores sapiente voluptates, aliquam deleniti maxime esse, quisquam architecto voluptatum perferendis eveniet amet laborum temporibus debitis pariatur ullam officia, provident repellendus.</p>
+									</a>
+									
+								</div>
+							</div>
+						</div>
+						<div class="post__item">
+							<div class="post-sec__item">
+								<div class="img-box img-box--post">
+									<a href="#">
+										<img src="http://solution.cmsmart.net/wp_printshop/printshop_header_boxed/wp-content/uploads/2016/04/Fits-Every-Interior-post-362x248.jpg" alt="">
+									</a>
+								</div>
+								<div class="pos-sec__info">
+									<a href="#">
+										<h4>Title post 1</h4>
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere maiores sapiente voluptates, aliquam deleniti maxime esse, quisquam architecto voluptatum perferendis eveniet amet laborum temporibus debitis pariatur ullam officia, provident repellendus.</p>
+									</a>
+									
+								</div>
+							</div>
+						</div>
+						<div class="post__item">
+							<div class="post-sec__item">
+								<div class="img-box img-box--post">
+									<a href="#">
+										<img src="http://solution.cmsmart.net/wp_printshop/printshop_header_boxed/wp-content/uploads/2016/04/Fits-Every-Interior-post-362x248.jpg" alt="">
+									</a>
+								</div>
+								<div class="pos-sec__info">
+									<a href="#">
+										<h4>Title post 1</h4>
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere maiores sapiente voluptates, aliquam deleniti maxime esse, quisquam architecto voluptatum perferendis eveniet amet laborum temporibus debitis pariatur ullam officia, provident repellendus.</p>
+									</a>
+									
+								</div>
+							</div>
+						</div>
+						<div class="post__item">
+							<div class="post-sec__item">
+								<div class="img-box img-box--post">
+									<a href="#">
+										<img src="http://solution.cmsmart.net/wp_printshop/printshop_header_boxed/wp-content/uploads/2016/04/Fits-Every-Interior-post-362x248.jpg" alt="">
+									</a>
+								</div>
+								<div class="pos-sec__info">
+									<a href="#">
+										<h4>Title post 1</h4>
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere maiores sapiente voluptates, aliquam deleniti maxime esse, quisquam architecto voluptatum perferendis eveniet amet laborum temporibus debitis pariatur ullam officia, provident repellendus.</p>
+									</a>
+									
+								</div>
+							</div>
+						</div>
+						<div class="post__item">
+							<div class="post-sec__item">
+								<div class="img-box img-box--post">
+									<a href="#">
+										<img src="http://solution.cmsmart.net/wp_printshop/printshop_header_boxed/wp-content/uploads/2016/04/Fits-Every-Interior-post-362x248.jpg" alt="">
+									</a>
+								</div>
+								<div class="pos-sec__info">
+									<a href="#">
+										<h4>Title post 1</h4>
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere maiores sapiente voluptates, aliquam deleniti maxime esse, quisquam architecto voluptatum perferendis eveniet amet laborum temporibus debitis pariatur ullam officia, provident repellendus.</p>
+									</a>
+									
 								</div>
 							</div>
 						</div>
@@ -576,7 +645,52 @@
 				</section>
 			</div>
 		</main>
-
+		<footer>
+			<div class="wrapper">
+				<div class="row justify-content-between">
+					<div class="col-lg-4 col-md-4 col-sm-12">
+						<h3>Liên hệ</h3>
+							<img src="./dist/img/logo-1.png" alt="">
+						<ul>
+							<li><a href="https://www.google.com/maps/place/123+%C4%90.+Th%C3%A0nh+Th%C3%A1i,+Ph%C6%B0%E1%BB%9Dng+14,+Qu%E1%BA%ADn+10,+Th%C3%A0nh+ph%E1%BB%91+H%E1%BB%93+Ch%C3%AD+Minh/@10.7743026,106.6621177,17z/data=!3m1!4b1!4m5!3m4!1s0x31752ec353a9a3db:0x3fdfde76d96290ad!8m2!3d10.7743026!4d106.6643064"><span class="fas fa-home"></span> 123, Huỳnh Thúc Kháng, P.22, Q.1</a></li>
+							<li><a href="mailto:abc@gmail.com"><span class="fas fa-envelope"></span> 123, Huỳnh Thúc Kháng, P.22, Q.1</a></li>
+							<li><a href="tel:0123456789"><span class="fas fa-phone-alt"></span> 123, Huỳnh Thúc Kháng, P.22, Q.1</a></li>
+						</ul>
+						<ul class="footer-social d-flex">
+							<li><a href="#"><span><i class="fab fa-facebook-f"></i></span></a></li>
+							<li><a href="#"><span><i class="fab fa-twitter"></i></span></a></li>
+							<li><a href="#"><span><i class="fab fa-google-plus-g"></i></span></a></li>
+						</ul>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-12">
+						<h3>Chính sách</h3>
+						<ul class="footer-policy">
+							<li>
+								<a href="#">Chính sách bảo hành</a>
+							</li>
+							<li>
+								<a href="#">Chính sách thanh toán</a>
+							</li>
+							<li>
+								<a href="#">Chính sách vận chuyển</a>
+							</li>
+							<li>
+								<a href="#">Chính sách bảo mật thông tin</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-12">
+						<iframe width ="100%" height="300px" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=false&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+					</div>
+				</div>
+				<p class="text-center pt-5">Print Shop - ©Copyright © 2021 Felix Dinh. All Rights Reserved</p>
+			</div>
+		</footer>
+		<div id="go-top">
+			<a href="#main-header">
+				<i class="fas fa-chevron-up"></i>
+			</a>
+		</div>
 	</div>
 	<!-- script  -->
 	<script src="./vendor/jquery-3.6.0.min.js"></script>
@@ -590,16 +704,38 @@
 		$(document).ready(function () {
 			//slide
 			$(".owl-carousel.header-banner").owlCarousel({
-				autoHeight:true,
 				items:1,
 				dots:false,
 				loop:true, 
 				autoplay:true,
     			autoplayTimeout:5000,
 			});
+			$(".owl-carousel.post__container").owlCarousel({
+				responsive:{
+					0:{
+						items:3
+					},
+					600:{
+						items:4
+					}
+				},
+				dots:true,
+				loop:true,
+				nav:true
+			});
 			$(".owl-carousel.slide__container").owlCarousel({
-				items:3,
 				autoHeight:true,
+				items:3,
+				margin:10,
+				dots:false,
+				responsive:{
+					0:{
+						items:2
+					},
+					600:{
+						items:3
+					}
+				},
 				loop:true, 
 				autoplay:true,
     			autoplayTimeout:5000,
@@ -627,6 +763,17 @@
 			}
 			$('#tablink-1').click();
 		});
+		var gotop= document.querySelector('#go-top');
+		window.onscroll = ()=>{
+			console.log('ok');
+			if(document.body.scrollTop> 400||document.documentElement.scrollTop > 400){
+				gotop.style.opacity="1";
+			}
+			else{
+				gotop.style.opacity="0";
+			}
+
+		}
 	</script>
 </body>
 
