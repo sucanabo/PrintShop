@@ -65,7 +65,7 @@
 					<ul>
 						<li><a href="#">Trang chủ</a></li>
 						<li><a href="#">Giới thiệu</a></li>
-						<li><a href="#">Sản phẩm</a></li>
+						<li><a href="./pages/product.html">Sản phẩm</a></li>
 						<li><a href="#">Tin tức</a></li>
 						<li><a href="#">Liên hệ</a></li>
 
@@ -699,82 +699,8 @@
 		integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
 		crossorigin="anonymous"></script>
 	<script src="./vendor/bootstrap-4.6.0/dist/js/bootstrap.bundle.min.js"></script>
-	
-	<script>
-		$(document).ready(function () {
-			//slide
-			$(".owl-carousel.header-banner").owlCarousel({
-				items:1,
-				dots:false,
-				loop:true, 
-				autoplay:true,
-    			autoplayTimeout:5000,
-			});
-			$(".owl-carousel.post__container").owlCarousel({
-				responsive:{
-					0:{
-						items:3
-					},
-					600:{
-						items:4
-					}
-				},
-				dots:true,
-				loop:true,
-				nav:true
-			});
-			$(".owl-carousel.slide__container").owlCarousel({
-				autoHeight:true,
-				items:3,
-				margin:10,
-				dots:false,
-				responsive:{
-					0:{
-						items:2
-					},
-					600:{
-						items:3
-					}
-				},
-				loop:true, 
-				autoplay:true,
-    			autoplayTimeout:5000,
-			});
-			//tab
-			$('.tablink').click(function(evt){
-				evt.preventDefault();
-				tabOpen(evt,this.id);
-
-			});
-			function tabOpen(evt,tabName){
-				let i,x,tabLinks;
-				x = $('.tab-cate');
-				for(i = 0;i < x.length;i ++ ){
-					console.log(x[i]);
-					x[i].classList.remove('active');
-				}
-				tabLinks = $('.tablink');
-				for(i = 0;i < x.length; i++ ){
-					 tabLinks[i].parentElement.classList.remove('active');
-				}
-				
-				document.querySelector((`#tab-cate__${tabName[tabName.length-1]}`).toString()).classList.add('active');
-				evt.currentTarget.parentElement.classList.add('active')
-			}
-			$('#tablink-1').click();
-		});
-		var gotop= document.querySelector('#go-top');
-		window.onscroll = ()=>{
-			console.log('ok');
-			if(document.body.scrollTop> 400||document.documentElement.scrollTop > 400){
-				gotop.style.opacity="1";
-			}
-			else{
-				gotop.style.opacity="0";
-			}
-
-		}
-	</script>
+	<script src="./dist/js/main.js"></script>
+	<script src="./dist/js/carousel.js"></script>
 </body>
 
 </html>
