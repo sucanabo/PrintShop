@@ -38,5 +38,20 @@ $(document).ready(function () {
         autoplay:true,
         autoplayTimeout:5000,
     });
+    $(".owl-carousel.galery-container").owlCarousel({
+        items:1,
+        dots:false,
+        loop:true,
+        nav:true,
+        URLhashListener:true,
+        autoplayHoverPause:true,
+        startPosition: 'URLHash' 
+    });
+    $(".owl-carousel.product-thumbnail").owlCarousel({
+        items:3,
+        dots:false,
+        loop:true,
+        margin:5
+    });
 });
 
